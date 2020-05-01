@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans&display=swap");
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 10vw;
+  background-color: #121110;
+}
+
+header + * {
+  margin-top: 80px;
+}
+
+header img.logo {
+  width: 30px;
+  height: 30px;
+}
+
+header nav#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+  z-index: 1;
+  background-color: #121110;
+  padding: 30px 10vw;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+header nav#menu:target {
+  right: 0;
+}
+
+header nav#menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  color: #fff;
+  line-height: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+header nav#menu ul a.active {
+  color: #D5B173;
+}
+/*# sourceMappingURL=header.css.map */
