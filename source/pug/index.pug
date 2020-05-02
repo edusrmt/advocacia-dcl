@@ -6,7 +6,16 @@ html
         title Escritório de Advocacia Professor Diógenes da Cunha Lima - Natal/RN
         meta(charset='UTF-8')
         meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        link(rel='stylesheet', href='styles/style.css')
-        link(rel='stylesheet', href='styles/header.css')
+        link(rel='stylesheet', href='styles/index.css')
     body
         +header('index')
+
+        section#inicio
+            div.carousel-picture.fade
+                img(src="images/fachada.jpg", alt="Fachada do escritório")
+            div.carousel-picture.fade
+                img(src="images/sala-de-atendimento.jpg", alt="Sala de atendimento do escritório")
+            div.carousel-picture.fade
+                img(src="images/gabinete.jpg", alt="Gabinete do escritório")
+
+        script(src="scripts/carousel.js")
