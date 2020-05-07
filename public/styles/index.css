@@ -1,4 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  background-color: #121110;
+  padding: 20vw 10vw;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +112,11 @@ header nav#menu ul a.active {
   color: #D5B173;
 }
 
-.carousel-picture {
+section#inicio {
+  padding: 0;
+}
+
+section#inicio .carousel-picture {
   display: none;
   overflow: hidden;
   height: calc(100vh - 80px);
@@ -100,7 +126,7 @@ header nav#menu ul a.active {
           animation-duration: 1.5s;
 }
 
-.carousel-picture img {
+section#inicio .carousel-picture img {
   height: calc(100vh - 80px);
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
@@ -125,20 +151,33 @@ header nav#menu ul a.active {
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+section#pilares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body {
-  font-family: 'Work Sans', sans-serif;
+section#pilares .pilar {
+  padding: 0 10vw;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+section#pilares .pilar:nth-child(2) {
+  margin: 3rem 0;
+}
+
+section#pilares .pilar h3 {
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
