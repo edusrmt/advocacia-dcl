@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,9 +16,20 @@ a {
   color: inherit;
 }
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #D5B173;
+}
+
+hr {
+  width: 50%;
+  border-color: #D5B173;
+  margin: .5rem 0 2rem 0;
+}
+
 section {
   background-color: #121110;
-  padding: 20vw 10vw;
+  padding: 20vw 10vw 0 10vw;
 }
 
 header {
@@ -40,7 +51,7 @@ header {
   width: 100%;
   height: 80px;
   padding: 0 10vw;
-  z-index: 100;
+  z-index: 1;
   background-color: #121110;
 }
 
@@ -74,7 +85,6 @@ header nav#menu {
   height: 100vh;
   overflow-y: scroll;
   overflow-x: visible;
-  z-index: 1;
   background-color: #121110;
   padding: 30px 10vw;
   -webkit-transition: all 0.5s ease 0s;
@@ -179,5 +189,115 @@ section#pilares .pilar:nth-child(2) {
 
 section#pilares .pilar h3 {
   margin-top: 1rem;
+}
+
+section#areas::after {
+  content: url();
+}
+
+section#areas .areas-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#areas .areas-container .area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 180px;
+  min-width: 75%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+section#areas .areas-container .area + .area {
+  margin-top: 10px;
+}
+
+section#areas .areas-container .area img {
+  height: 50px;
+}
+
+section#areas .areas-container .area h3 {
+  font-family: 'Playfair Display', serif;
+  margin: .6rem 0 .4rem 0;
+}
+
+section#areas .areas-container .area a.mais {
+  text-decoration: underline;
+  color: #121110;
+  font-size: .8rem;
+}
+
+section#areas .areas-container .container {
+  padding: 2px 16px;
+}
+
+section#areas .areas-container .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+section#areas .areas-container .modal:target {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+section#areas .areas-container .modal .modal-inner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20vw 10vw;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+  background-color: #fff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+section#areas .areas-container .modal .modal-inner a.close {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+section#areas .areas-container .modal .modal-inner h2 {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=index.css.map */
