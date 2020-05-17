@@ -341,4 +341,104 @@ section#professor a {
   font-size: .8rem;
   letter-spacing: .2rem;
 }
+
+section#contato {
+  padding-bottom: 5vw;
+}
+
+section#contato form {
+  padding-top: 1rem;
+}
+
+section#contato input {
+  border: 1px solid white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1rem;
+  height: 40px;
+  color: white;
+  padding-left: 5vw;
+}
+
+section#contato input[type='submit'] {
+  text-transform: uppercase;
+  background-color: #D5B173;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .6rem 0;
+  font-size: .8rem;
+  letter-spacing: .2rem;
+  border: none;
+}
+
+section#contato textarea {
+  border: 1px solid white;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 1rem;
+  height: 160px;
+  padding-top: 15px;
+  color: white;
+  resize: none;
+  padding-left: 5vw;
+}
+
+section#contato input::-webkit-input-placeholder, section#contato textarea::-webkit-input-placeholder {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+}
+
+section#contato input:-ms-input-placeholder, section#contato textarea:-ms-input-placeholder {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+}
+
+section#contato input::-ms-input-placeholder, section#contato textarea::-ms-input-placeholder {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+}
+
+section#contato input::placeholder, section#contato textarea::placeholder {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9rem;
+}
+
+section#contato .infos {
+  color: #fff;
+  margin-top: 10vw;
+}
+
+section#contato .infos .card + .card {
+  margin-top: 1rem;
+}
+
+section#contato .infos .card h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: .9rem;
+}
+
+section#contato .infos .card span {
+  display: block;
+  line-height: 1.5rem;
+}
+
+section#contato .infos .card img {
+  margin: .5rem .75rem 0 0;
+  height: 2rem;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 30vh;
+}
 /*# sourceMappingURL=index.css.map */
