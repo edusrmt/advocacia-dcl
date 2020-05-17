@@ -272,9 +272,13 @@ section#areas .areas-container .modal:target {
   transition: opacity 200ms;
 }
 
+section#areas .areas-container .modal:target .modal-inner {
+  top: 0;
+}
+
 section#areas .areas-container .modal .modal-inner {
   position: fixed;
-  top: 0;
+  top: 100%;
   right: 0;
   padding: 20vw 10vw;
   width: 100%;
@@ -299,5 +303,42 @@ section#areas .areas-container .modal .modal-inner a.close {
 
 section#areas .areas-container .modal .modal-inner h2 {
   margin-bottom: 1rem;
+}
+
+section#professor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10vw;
+  background-color: #fff;
+  text-align: center;
+}
+
+section#professor img {
+  height: 270px;
+}
+
+section#professor h2 {
+  margin: 1rem 0;
+}
+
+section#professor p {
+  margin-bottom: 2rem;
+}
+
+section#professor a {
+  background-color: #D5B173;
+  text-transform: uppercase;
+  color: #fff;
+  padding: .6rem 1rem;
+  font-size: .8rem;
+  letter-spacing: .2rem;
 }
 /*# sourceMappingURL=index.css.map */

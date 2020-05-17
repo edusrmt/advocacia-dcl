@@ -120,11 +120,14 @@ section#areas
             &:target
                 pointer-events: all
                 opacity: 1
-                transition: opacity 200ms                
+                transition: opacity 200ms
+
+                .modal-inner
+                    top: 0            
             
             .modal-inner
                 position: fixed
-                top: 0
+                top: 100%
                 right: 0
                 padding: (2 * $page-margin) $page-margin
                 
@@ -144,4 +147,30 @@ section#areas
 
                 h2                    
                     margin-bottom: 1rem
+
+section#professor
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-bottom: $page-margin
+
+    background-color: #fff
+    text-align: center
+
+    img
+        height: 270px
+
+    h2
+        margin: 1rem 0
+
+    p
+        margin-bottom: 2rem
+
+    a
+        background-color: $gold
+        text-transform: uppercase
+        color: #fff
+        padding: .6rem 1rem
+        font-size: .8rem
+        letter-spacing: .2rem
             
