@@ -1,21 +1,4 @@
 @import includes/common
-    
-*
-    padding: 0
-    margin: 0
-    outline: 0
-    box-sizing: border-box
-
-body
-    font-family: 'Montserrat', sans-serif
-
-a
-    text-decoration: none
-    color: inherit
-
-h2
-    font-family: 'Playfair Display', serif
-    color: $gold
 
 hr
     width: 50%
@@ -25,8 +8,6 @@ hr
 section
     background-color: $black
     padding: $page-margin
-
-@import includes/header
 
 section#inicio
     padding: 0
@@ -41,6 +22,8 @@ section#inicio
 
         img
             height: calc(100vh - 80px)
+            min-width: 100vw
+            object-fit: cover
             margin-left: 50%
             transform: translateX(-50%)
 
@@ -189,7 +172,7 @@ section#contato
         margin-bottom: 1rem
         height: 40px
         color: white
-        padding-left: (0.5 * $page-margin)
+        padding: 0 (0.5 * $page-margin)
 
         &[type='submit']
             text-transform: uppercase
@@ -208,10 +191,9 @@ section#contato
         box-sizing: border-box
         margin-bottom: 1rem
         height: 160px
-        padding-top: 15px
         color: white
         resize: none
-        padding-left: (0.5 * $page-margin)
+        padding: .7rem (0.5 * $page-margin)
 
     input::placeholder, textarea::placeholder
         color: #fff

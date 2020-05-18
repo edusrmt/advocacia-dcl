@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #D5B173;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding: 0 10vw;
+  z-index: 1;
+  background-color: #121110;
+}
+
+header + * {
+  margin-top: 80px;
+}
+
+header img.logo {
+  width: 30px;
+  height: 30px;
+}
+
+header nav#menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: visible;
+  background-color: #121110;
+  padding: 30px 10vw;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+header nav#menu:target {
+  right: 0;
+}
+
+header nav#menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  color: #fff;
+  line-height: 2rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+}
+
+header nav#menu ul a.active {
+  color: #D5B173;
+}
+
+footer {
+  background-color: #121110;
+  color: #fff;
+  padding: 5vw 10vw;
+  font-size: .9rem;
+}
+
+main {
+  padding: 10vw;
+}
+
+main h1 {
+  font-family: 'Playfair Display', serif;
+  color: #121110;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+main .equipe {
+  width: 100%;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .equipe .membro {
+  width: 100%;
+  opacity: 0.5;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin-top: -4px;
+}
+
+main .equipe .membro img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top left;
+     object-position: top left;
+  margin: 0;
+}
+
+main .equipe .membro .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+main .equipe .membro .info h2 {
+  margin-bottom: 1rem;
+}
+
+main .equipe .membro .info p + p {
+  margin-top: 1rem;
+}
+
+main .equipe .membro:hover {
+  opacity: 1;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+main .equipe .membro.collapsed .info {
+  max-height: 0px;
+  padding: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  text-overflow: ellipsis;
+}
+
+main .equipe .membro.collapsed .info p {
+  width: 100%;
+}
+
+main .equipe .membro.collapsed .info h2, main .equipe .membro.collapsed .info p {
+  overflow: auto;
+  text-overflow: ellipsis;
+}
+/*# sourceMappingURL=equipe.css.map */
