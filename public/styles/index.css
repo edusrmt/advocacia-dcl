@@ -1,37 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h2 {
-  font-family: 'Playfair Display', serif;
-  color: #D5B173;
-}
-
-hr {
-  width: 50%;
-  border-color: #D5B173;
-  margin: .5rem 0 2rem 0;
-}
-
-section {
-  background-color: #121110;
-  padding: 20vw 10vw 0 10vw;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -122,6 +89,46 @@ header nav#menu ul a.active {
   color: #D5B173;
 }
 
+footer {
+  background-color: #121110;
+  color: #fff;
+  padding: 5vw 10vw;
+  font-size: .9rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: #D5B173;
+}
+
+hr {
+  width: 50%;
+  border-color: #D5B173;
+  margin: .5rem 0 2rem 0;
+}
+
+section {
+  background-color: #121110;
+  padding: 10vw;
+}
+
 section#inicio {
   padding: 0;
 }
@@ -174,6 +181,7 @@ section#pilares {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 20vw;
 }
 
 section#pilares .pilar {
@@ -316,7 +324,7 @@ section#professor {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 10vw;
+  padding: 15vw 10vw;
   background-color: #fff;
   text-align: center;
 }
