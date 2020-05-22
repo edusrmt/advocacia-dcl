@@ -13,6 +13,17 @@ body {
   color: #444444;
 }
 
+main {
+  padding: 10vw;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 h2 {
   font-family: 'Playfair Display', serif;
   color: #D5B173;
@@ -120,38 +131,27 @@ footer {
   font-size: .9rem;
 }
 
-main {
-  padding: 10vw;
-}
-
-main h1 {
-  font-family: 'Playfair Display', serif;
-  color: #2c2c2c;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-main .texto p {
+.texto p {
   text-align: justify;
   line-height: 1.5rem;
 }
 
-main .texto p + p {
+.texto p + p {
   margin-top: 1rem;
 }
 
-main .texto .assinatura {
+.texto .assinatura {
   margin: 1rem 0;
 }
 
-main .texto .assinatura strong {
+.texto .assinatura strong {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   color: #D5B173;
   display: block;
 }
 
-main .texto .assinatura small {
+.texto .assinatura small {
   text-transform: uppercase;
 }
 

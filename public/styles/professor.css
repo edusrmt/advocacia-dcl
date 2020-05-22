@@ -130,81 +130,32 @@ footer {
   font-size: .9rem;
 }
 
-main .equipe {
-  width: 100%;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.texto p {
+  text-align: justify;
+  line-height: 1.5rem;
 }
 
-main .equipe .membro {
-  width: 100%;
-  opacity: 0.5;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-  margin-top: -4px;
-}
-
-main .equipe .membro img {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top left;
-     object-position: top left;
-  margin: 0;
-}
-
-main .equipe .membro .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 20px;
-  opacity: 1;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-main .equipe .membro .info h2 {
-  margin-bottom: 1rem;
-}
-
-main .equipe .membro .info p + p {
+.texto p + p {
   margin-top: 1rem;
 }
 
-main .equipe .membro:hover {
-  opacity: 1;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
+.texto .assinatura {
+  margin: 1rem 0;
 }
 
-main .equipe .membro.collapsed .info {
-  max-height: 0px;
-  padding: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-  text-overflow: ellipsis;
+.texto .assinatura strong {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: #D5B173;
+  display: block;
 }
 
-main .equipe .membro.collapsed .info p {
-  width: 100%;
+.texto .assinatura small {
+  text-transform: uppercase;
 }
 
-main .equipe .membro.collapsed .info h2, main .equipe .membro.collapsed .info p {
-  overflow: auto;
-  text-overflow: ellipsis;
+main img {
+  width: 100vw;
+  margin-left: -10vw;
 }
-/*# sourceMappingURL=equipe.css.map */
+/*# sourceMappingURL=professor.css.map */

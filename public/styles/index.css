@@ -12,6 +12,17 @@ body {
   color: #444444;
 }
 
+main {
+  padding: 10vw;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
 h2 {
   font-family: 'Playfair Display', serif;
   color: #D5B173;
