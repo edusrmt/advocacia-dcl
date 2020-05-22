@@ -1,0 +1,58 @@
+@import includes/common
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&display=swap')
+    
+main
+    padding: $page-margin
+
+    h1
+        font-family: 'Playfair Display', serif
+        color: $darkgray
+        text-transform: uppercase
+        margin-bottom: 1rem
+
+    .texto
+        p
+            text-align: justify
+            line-height: 1.5rem
+
+        p + p
+            margin-top: 1rem
+
+        .assinatura
+            margin: 1rem 0
+
+            strong
+                font-family: 'Playfair Display', serif
+                font-style: italic
+                color: $gold
+                display: block
+
+            small
+                text-transform: uppercase
+
+    .carousel
+        .carousel-picture
+            display: none
+            overflow: hidden
+            width: 100vw
+            margin-left: -$page-margin
+
+            img
+                width: 100%
+        
+        .carousel-label
+            display: flex
+            align-items: flex-end
+            justify-content: center
+
+            color: $gold
+            margin-top: -4.5rem
+
+            strong
+                font-family: "Playfair Display", serif
+                font-size: 5rem
+                font-weight: 900
+
+            small
+                text-transform: uppercase
+                margin-left: 1rem
