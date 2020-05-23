@@ -1,13 +1,23 @@
 @import includes/common
 
 hr
-    width: 50%
     border-color: $gold
-    margin: .5rem 0 2rem 0
+    margin: -0.5rem 0 2rem 0
+    
+    @include phone
+        width: 50%
+
+    @include desktop
+        width: 20%
 
 section
     background-color: $black
-    padding: $page-margin
+
+    @include phone
+        padding: $page-margin
+
+    @include desktop
+        padding: (0.5 * $page-margin) $page-margin
 
 section#inicio
     padding: 0
@@ -35,32 +45,41 @@ section#inicio
 
 section#pilares
     display: flex
-    flex-direction: column
     justify-content: space-around
-    align-items: center
-    padding-top: 2 * $page-margin
+
+    @include phone
+        flex-direction: column
+        align-items: center
+        padding-top: 2 * $page-margin
+
+    @include desktop
+        align-items: flex-start
 
     .pilar
-        padding: 0 $page-margin
         color: #fff
         text-align: center
         line-height: 1.5rem
 
-        &:nth-child(2)
-            margin: 3rem 0
+        @include phone
+            padding: 0 $page-margin
+
+            &:nth-child(2)
+                margin: 3rem 0
+
+        @include desktop
+            max-width: 25%
 
         h3
             margin-top: 1rem
 
-section#areas
-    &::after
-        content: url()
-
+section#areas    
     .areas-container
         display: flex
-        flex-direction: column
         justify-content: space-around
         align-items: center
+
+        @include phone
+            flex-direction: column
 
         .area
             display: flex
@@ -68,13 +87,19 @@ section#areas
             justify-content: center
             align-items: center
             height: 180px
-            min-width: 75%
             text-align: center
             border-radius: 5px
             background-color: #fff
 
-            & + .area
-                margin-top: 10px
+
+            @include phone
+                min-width: 75%
+
+                & + .area
+                    margin-top: 10px
+
+            @include desktop
+                min-width: 20%
 
             img
                 height: 50px
@@ -106,103 +131,178 @@ section#areas
                 opacity: 1
                 transition: opacity 200ms
 
-                .modal-inner
-                    top: 0            
-            
-            .modal-inner
-                position: fixed
-                top: 100%
+                @include phone
+                    .modal-inner
+                        top: 0   
+
+            a.close-area
+                position: absolute
+                top: 0
                 right: 0
-                padding: (2 * $page-margin) $page-margin
-                
-                width: 100%
+                bottom: 0
+                left: 0
+                background-color: $lightgray
+                opacity: 0.5
+                transition: opacity 200ms
+                width: 100vw
                 height: 100vh
-                overflow-y: scroll
-                overflow-x: visible
-                
+
+                &:hover
+                    opacity: 0.4
+
+                @include phone
+                    display: none
+            
+            .modal-inner                
                 background-color: #fff
                 transition: all 0.5s ease 0s
+
+                @include phone
+                    position: fixed
+                    width: 100%
+                    height: 100vh
+                    top: 100%
+                    right: 0
+                    padding: (2 * $page-margin) $page-margin                
+
+                    overflow-y: scroll
+                    overflow-x: visible
+
+                @include desktop
+                    position: absolute
+                    display: block
+                    width: 70%
+                    top: 50%
+                    left: 50%
+                    padding: 3rem
+                    transform: translateX(-50%) translateY(-50%)
+                    box-shadow: 0px 12px 24px rgba(0,0,0,0.2)
+                    border-radius: 10px
 
                 a.close
                     width: 100%
                     display: flex
                     justify-content: flex-end
-                    margin-bottom: 1rem
+                    
+                    @include phone
+                        margin-bottom: 1rem
 
-                h2                    
-                    margin-bottom: 1rem
+                    @include desktop
+                        margin-bottom: -2.3rem                
 
 section#professor
     display: flex
-    flex-direction: column
     align-items: center
-    padding: 1.5 * $page-margin $page-margin
-
     background-color: #fff
-    text-align: center
+
+    @include phone
+        flex-direction: column
+        text-align: center
+        padding: 1.5 * $page-margin $page-margin
+
+    @include desktop
+        justify-content: space-between
+
+        .content
+            padding-right: 2rem
 
     img
-        height: 270px
+        @include phone
+            height: 270px
+            margin-bottom: 1rem
 
-    h2
-        margin: 1rem 0
+        @include desktop
+            order: 2
 
     p
         margin-bottom: 2rem
+
+        @include desktop
+            line-height: 1.6rem
 
     a
         background-color: $gold
         text-transform: uppercase
         color: #fff
-        padding: .6rem 1rem
         font-size: .8rem
         letter-spacing: .2rem
+
+        @include phone
+            padding: .6rem 1rem
+
+        @include desktop
+            padding: 1rem 2rem
 
 section#contato
     padding-bottom: (0.5 * $page-margin)
 
-    form
-        padding-top: 1rem
+    .content
+        @include desktop
+            display: flex
+            align-items: flex-start
 
-    input
-        border: 1px solid white
-        width: 100%
-        background-color: rgba(0,0,0,0)
-        box-sizing: border-box
-        margin-bottom: 1rem
-        height: 40px
-        color: white
-        padding: 0 (0.5 * $page-margin)
+    form        
+        @include desktop
+            max-width: 60%
 
-        &[type='submit']
-            text-transform: uppercase
-            background-color: $gold
-            text-transform: uppercase
+        input
+            border: 1px solid white
+            width: 100%
+            background-color: rgba(0,0,0,0)
+            box-sizing: border-box
+            margin-bottom: 1rem
+            color: white
+
+            @include phone
+                padding: 0 (0.5 * $page-margin)
+                height: 40px
+
+            @include desktop
+                padding: 0 (0.15 * $page-margin)
+                height: 50px
+
+            &[type='submit']
+                text-transform: uppercase
+                background-color: $gold
+                text-transform: uppercase
+                color: #fff
+                padding: .6rem 0
+                font-size: .8rem
+                letter-spacing: .2rem
+                border: none
+
+                @include desktop
+                    max-width: 30%
+
+        textarea
+            border: 1px solid white
+            width: 100%
+            background-color: rgba(0,0,0,0)
+            box-sizing: border-box
+            margin-bottom: 1rem
+            height: 160px
+            color: white
+            resize: none
+
+            @include phone
+                padding: .7rem (0.5 * $page-margin)
+
+            @include desktop
+                padding: .8rem (0.15 * $page-margin)
+
+        input::placeholder, textarea::placeholder
             color: #fff
-            padding: .6rem 0
-            font-size: .8rem
-            letter-spacing: .2rem
-            border: none
-
-    textarea
-        border: 1px solid white
-        width: 100%
-        background-color: rgba(0,0,0,0)
-        box-sizing: border-box
-        margin-bottom: 1rem
-        height: 160px
-        color: white
-        resize: none
-        padding: .7rem (0.5 * $page-margin)
-
-    input::placeholder, textarea::placeholder
-        color: #fff
-        font-family: 'Montserrat', sans-serif
-        font-size: .9rem
+            font-family: 'Montserrat', sans-serif
+            font-size: .9rem
         
     .infos
         color: #fff
-        margin-top: $page-margin
+
+        @include phone
+            margin-top: $page-margin
+
+        @include desktop
+            padding-left: 0.5 * $page-margin
 
         .card
             & + .card
@@ -224,4 +324,10 @@ section#contato
 iframe
     border: none
     width: 100%
-    height: 30vh
+    margin-bottom: -4px
+    
+    @include phone
+        height: 30vh
+
+    @include desktop
+        height: 60vh

@@ -3,12 +3,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,900;1,700&display=swap')
     
 main
+    @include desktop
+        display: flex
+
     .carousel
+        @include desktop
+            min-width: 60%
+            margin-top: 8rem
+
         .carousel-picture
             display: none
-            overflow: hidden
-            width: 100vw
-            margin-left: -$page-margin
+
+            @include phone
+                width: 100vw
+                margin-left: -$page-margin
+                overflow: hidden
+
+            @include desktop
+                width: 90%
+                margin-left: auto
 
             img
                 width: 100%
@@ -19,13 +32,29 @@ main
             justify-content: center
 
             color: $gold
-            margin-top: -4.5rem
+
+            @include phone
+                margin-top: -4.5rem
+
+            @include desktop
+                margin-top: -8.5rem
+                width: 90%
+                margin-left: auto
 
             strong
                 font-family: "Playfair Display", serif
-                font-size: 5rem
                 font-weight: 900
+
+                @include phone
+                    font-size: 5rem
+
+                @include desktop
+                    font-size: 12rem
+                    line-height: 12rem
 
             small
                 text-transform: uppercase
                 margin-left: 1rem
+
+                @include desktop
+                    font-size: 1.25rem

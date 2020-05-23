@@ -2,10 +2,10 @@ mixin header(active)
     header#page
         a(href="./index.html")
             img.logo(src='images/logo.png', alt='Logotipo do escritório')
-        a(href='#menu')
+        a.mobile(href='#menu')
             img(src='images/icons/menu.svg', alt='Abrir menu')
         nav#menu
-            a(href='#page')
+            a.mobile(href='#page')
                 img(src='images/icons/x-mark.svg', alt='Fechar menu')
             ul
                 li

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <header id="page"><a href="./index.html"><img class="logo" src="images/logo.png" alt="Logotipo do escritório"/></a><a href="#menu"><img src="images/icons/menu.svg" alt="Abrir menu"/></a>
-      <nav id="menu"><a href="#page"><img src="images/icons/x-mark.svg" alt="Fechar menu"/></a>
+    <header id="page"><a href="./index.html"><img class="logo" src="images/logo.png" alt="Logotipo do escritório"/></a><a class="mobile" href="#menu"><img src="images/icons/menu.svg" alt="Abrir menu"/></a>
+      <nav id="menu"><a class="mobile" href="#page"><img src="images/icons/x-mark.svg" alt="Fechar menu"/></a>
         <ul>
           <li><a class="active" href="./index.html">Início </a></li>
           <li><a href="./historia.html">História  </a></li>
@@ -78,8 +78,8 @@
             <h3>Consumidor</h3><a class="mais" href="#consumidor">Saiba mais</a>
           </div>
         </div>
-        <div class="modal" id="civil">
-          <div class="modal-inner"><a class="close" href="#areas"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
+        <div class="modal" id="civil"><a class="close-area" href="#page"></a>
+          <div class="modal-inner"><a class="close" href="#page"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
             <h2>Direito Civil</h2>
             <p>
               Direito Civil é o ramo do Direito que engloba o conjunto de normas jurídicas
@@ -88,8 +88,8 @@
             </p>
           </div>
         </div>
-        <div class="modal" id="criminal">
-          <div class="modal-inner"><a class="close" href="#areas"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
+        <div class="modal" id="criminal"><a class="close-area" href="#page"></a>
+          <div class="modal-inner"><a class="close" href="#page"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
             <h2>Direito Criminal</h2>
             <p>
               Também conhecido como Direito Penal, é o ramo responsável por atribuir penas aos delitos de acordo com as normas originadas no Poder Legislativo.
@@ -99,8 +99,8 @@
             </p>
           </div>
         </div>
-        <div class="modal" id="imobiliario">
-          <div class="modal-inner"><a class="close" href="#areas"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
+        <div class="modal" id="imobiliario"><a class="close-area" href="#page"></a>
+          <div class="modal-inner"><a class="close" href="#page"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
             <h2>Direito Imobiliário</h2>
             <p>
               Direito Imobiliário é o ramo do direito privado responsável por regular as relações jurídicas decorrentes da propriedade de bens imóveis.
@@ -108,8 +108,8 @@
             </p>
           </div>
         </div>
-        <div class="modal" id="consumidor">
-          <div class="modal-inner"><a class="close" href="#areas"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
+        <div class="modal" id="consumidor"><a class="close-area" href="#page"></a>
+          <div class="modal-inner"><a class="close" href="#page"><img src="images/icons/x-mark-gold.svg" alt="Fechar modal" style="color: black;"></a>
             <h2>Direito do Consumidor</h2>
             <p>
               Direito do Consumidor é um ramo do direito brasileiro responsável pela garantia dos direitos da pessoa,
@@ -127,25 +127,27 @@
       </div>
     </section>
     <section id="contato">
-      <h2>Fale conosco</h2>
-      <form action="">
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="E-mail">
-        <textarea placeholder="Mensagem" cols="30" rows="10"></textarea>
-        <input type="submit" value="Enviar">
-      </form>
-      <div class="infos">
-        <div class="card">
-          <h3>Endereço</h3><span>Av. Hermes da Fonseca, 957, Tirol, Natal - RN, 59014-555</span>
-        </div>
-        <div class="card">
-          <h3>Contatos</h3><span>Telefone: (84) 3216-2300</span><span>E-mail: diogenes@dcl.adv.br</span>
-        </div>
-        <div class="card">
-          <h3>Horário de Atendimento</h3><span>Segunda a Sexta</span><span>08:00 às 18:00 horas</span>
-        </div>
-        <div class="card">
-          <h3>Nos siga nas redes sociais</h3><a href="https://www.facebook.com/advocaciadiogenesdacunhalima/" target="_blank" rel="noopener noreferrer"><img src="images/icons/facebook.svg" alt="Ícone do Facebook"></a><a href="http://instagram.com/advocaciadiogenesdacunhalima" target="_blank" rel="noopener noreferrer"><img src="images/icons/instagram.svg" alt="Ícone do Instagram"></a>
+      <h2>Fale Conosco</h2>
+      <div class="content">
+        <form>
+          <input type="text" name="nome" placeholder="Nome">
+          <input type="text" name="email" placeholder="E-mail">
+          <textarea placeholder="Mensagem" name="mensagem" cols="30" rows="10"></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+        <div class="infos">
+          <div class="card">
+            <h3>Endereço</h3><span>Av. Hermes da Fonseca, 957, Tirol, Natal - RN, 59014-555</span>
+          </div>
+          <div class="card">
+            <h3>Contatos</h3><span>Telefone: (84) 3216-2300</span><span>E-mail: diogenes@dcl.adv.br</span>
+          </div>
+          <div class="card">
+            <h3>Horário de Atendimento</h3><span>Segunda a Sexta</span><span>08:00 às 18:00 horas</span>
+          </div>
+          <div class="card">
+            <h3>Nos siga nas redes sociais</h3><a href="https://www.facebook.com/advocaciadiogenesdacunhalima/" target="_blank" rel="noopener noreferrer"><img src="images/icons/facebook.svg" alt="Ícone do Facebook"></a><a href="https://instagram.com/advocaciadiogenesdacunhalima" target="_blank" rel="noopener noreferrer"><img src="images/icons/instagram.svg" alt="Ícone do Instagram"></a>
+          </div>
         </div>
       </div>
     </section>
