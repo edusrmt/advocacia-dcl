@@ -73,6 +73,15 @@ section#pilares
             margin-top: 1rem
 
 section#areas    
+    @include desktop
+        position: relative
+
+        &::after
+            content: url('../images/stars.svg')
+            bottom: 0
+            right: 0
+            position: absolute
+
     .areas-container
         display: flex
         justify-content: space-around
@@ -90,7 +99,7 @@ section#areas
             text-align: center
             border-radius: 5px
             background-color: #fff
-
+            z-index: 1
 
             @include phone
                 min-width: 75%
@@ -100,6 +109,10 @@ section#areas
 
             @include desktop
                 min-width: 20%
+
+                &:hover
+                    margin: -5px 0 5px 0
+                    transition: 0.3s
 
             img
                 height: 50px
@@ -233,6 +246,10 @@ section#professor
         @include desktop
             padding: 1rem 2rem
 
+            &:hover
+                background-color: #e6bf7c
+                transition: .1s
+
 section#contato
     padding-bottom: (0.5 * $page-margin)
 
@@ -270,9 +287,14 @@ section#contato
                 font-size: .8rem
                 letter-spacing: .2rem
                 border: none
+                cursor: pointer
 
                 @include desktop
                     max-width: 30%
+
+                    &:hover
+                        background-color: #e6bf7c
+                        transition: .1s
 
         textarea
             border: 1px solid white

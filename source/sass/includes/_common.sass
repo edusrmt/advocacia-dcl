@@ -126,12 +126,18 @@ header
                     & + li
                         margin-left: 2rem
 
-                a.active
-                    @include phone
-                        color: $gold
-
+                a
                     @include desktop
-                        border-bottom: 2px solid $gold
+                        &:hover
+                            color: $gold
+                            transition: .1s
+                    
+                    &.active
+                        @include phone
+                            color: $gold
+
+                        @include desktop
+                            border-bottom: 2px solid $gold
 
 footer
     display: flex
