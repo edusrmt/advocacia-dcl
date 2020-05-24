@@ -610,6 +610,23 @@ section#contato {
   padding-bottom: 5vw;
 }
 
+section#contato .status {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1rem 10vw;
+  background-color: #D5B173;
+  color: #fff;
+}
+
+@media screen and (min-width: 900px) {
+  section#contato .status {
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 900px) {
   section#contato .content {
     display: -webkit-box;

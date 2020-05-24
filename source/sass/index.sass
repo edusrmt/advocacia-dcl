@@ -253,6 +253,19 @@ section#professor
 section#contato
     padding-bottom: (0.5 * $page-margin)
 
+    .status
+        display: none
+        position: fixed
+        bottom: 0
+        left: 0
+        width: 100vw
+        padding: 1rem $page-margin
+        background-color: $gold
+        color: #fff
+
+        @include desktop
+            text-align: center
+
     .content
         @include desktop
             display: flex
