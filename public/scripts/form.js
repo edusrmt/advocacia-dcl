@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const data = new FormData(form);
         
         const ajax = new XMLHttpRequest();
-        ajax.open("POST", "https://formspee.io/mgenavnv");
+        ajax.open("POST", "https://formspree.io/mgenavnv");
         ajax.setRequestHeader("Accept", "application/json");
         ajax.onreadystatechange = () => {
             if (ajax.readyState !== XMLHttpRequest.DONE) return;

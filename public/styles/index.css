@@ -490,7 +490,7 @@ section#areas .areas-container .modal .modal-inner {
   section#areas .areas-container .modal .modal-inner {
     position: absolute;
     display: block;
-    width: 70%;
+    width: 50%;
     top: 50%;
     left: 50%;
     padding: 3rem;
@@ -522,6 +522,10 @@ section#areas .areas-container .modal .modal-inner a.close {
   section#areas .areas-container .modal .modal-inner a.close {
     margin-bottom: -2.3rem;
   }
+}
+
+section#areas .areas-container .modal .modal-inner p.sub {
+  font-size: .8rem;
 }
 
 section#professor {

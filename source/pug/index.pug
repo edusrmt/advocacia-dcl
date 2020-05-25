@@ -53,7 +53,7 @@ html
             .areas-container
                 +card("Civil", "civil", "Balança de dois pratos")
                 +card("Criminal", "criminal", "Martelo de tribunal")
-                +card("Imobiliário", "imobiliario", "Casa com marlo de tribunal à frente")
+                +card("Empresarial", "empresarial", "Contrato com selo")
                 +card("Consumidor", "consumidor", "Moeda flutuando sobre uma mão")
 
                 #civil.modal
@@ -63,9 +63,10 @@ html
                             img(src="images/icons/x-mark-gold.svg", alt="Fechar modal", style="color: black;")
                         h2 Direito Civil
                         p.
-                            Direito Civil é o ramo do Direito que engloba o conjunto de normas jurídicas
-                            responsáveis por regular os direitos e obrigações de ordem privada em relação as pessoas,
-                            seus bens e suas relações.
+                            Litígios de natureza civil, tais como direito das obrigações,
+                            direito das coisas, planos de saúde e seguros em geral,
+                            previdência complementar, revisão e resolução contratual,
+                            direito de família, entre outros.
                 #criminal.modal
                     a.close-area(href="#page")
                     .modal-inner
@@ -73,33 +74,51 @@ html
                             img(src="images/icons/x-mark-gold.svg", alt="Fechar modal", style="color: black;")
                         h2 Direito Criminal
                         p
-                            |Também conhecido como Direito Penal, é o ramo responsável por atribuir penas aos delitos de acordo com as normas originadas no Poder Legislativo.
-                            |Tais penas permitem preservar a sociedade ao mesmo tempo que proporcionam o seu desenvolvimento.
+                            strong Direito Penal Clássico: 
+                            | Crimes contra a pessoa, especificamente contra a vida, a integridade física, a liberdade,
+                            | a honra e o patrimônio e crimes contra a administração pública, sejam estes cometidos
+                            | por funcionários públicos ou particulares. Também crimes de violência doméstica
+                            | (Lei Maria da Penha), infrações penais de menor potencial ofensivo (JECRIM),
+                            | crimes da internet, entre outros.
                             br
                             br
-                            | Nessa área contamos com o advogado Gabriel Lucas Moura de Souza:
+                        p
+                            strong Direito Penal Econômico: 
+                            | Crimes contra o sistema financeiro, a ordem econômica e o mercado de capitais,
+                            | crimes contra a ordem tributária, crime de lavagem de bens, direitos e valores,
+                            | crimes ambientais, crimes eleitorais, crimes nas relações de consumo,
+                            | crimes contra a propriedade imaterial, crimes de fraude à licitação, entre outros.
                             br
                             br
-                            | - Graduação em Direito pela Universidade Federal do Rio Grande do Norte
+                        hr
+                        p.sub
+                            | Nessa área poderemos contar com o advogado Gabriel Lucas Moura de Souza:
+                            br
+                            br
+                            | - Graduação em Direito pela Universidade Federal do Rio Grande do Norte;
                             br                          
-                            | - Especialista em Direito Processual Penal pela Faculdade Damásio.
+                            | - Especialista em Direito Processual Penal pela Faculdade Damásio;
                             br
                             | - Professor Universitário de Direito Penal e Direito Processual Penal (Universidade
-                            | Potiguar/Laureate)
+                            | Potiguar/Laureate);
                             br
                             | - Pesquisador nas temáticas de nulidades, provas, dosimetria da pena e colaboração
-                            | premiada.
+                            | premiada;
                             br
                             | - Atuação na advocacia criminal.
-                #imobiliario.modal
+                #empresarial.modal
                     a.close-area(href="#page")
                     .modal-inner
                         a.close(href="#page")
                             img(src="images/icons/x-mark-gold.svg", alt="Fechar modal", style="color: black;")
-                        h2 Direito Imobiliário
+                        h2 Direito Empresarial
                         p.
-                            Direito Imobiliário é o ramo do direito privado responsável por regular as relações jurídicas decorrentes da propriedade de bens imóveis.
-                            E envolve, dessa forma, as discussões legais sobre objetos imóveis.
+                            Constituição de sociedades, alterações de contratos e estatuto social,
+                            sucessão empresarial, fusão, cisão, aquisição e incorporação,
+                            dissolução de sociedades, retirada e exclusão de sócios e/ou acionistas,
+                            cálculo de haveres, contratos empresariais,
+                            redação e estudo de regimentos e demais regramentos internos,
+                            consultoria societária preventiva e elaboração de atas e acordos e outros.
                 #consumidor.modal
                     a.close-area(href="#page")
                     .modal-inner
@@ -107,8 +126,9 @@ html
                             img(src="images/icons/x-mark-gold.svg", alt="Fechar modal", style="color: black;")
                         h2 Direito do Consumidor
                         p.
-                            Direito do Consumidor é um ramo do direito brasileiro responsável pela garantia dos direitos da pessoa,
-                            seja ela física ou jurídica, em relação a um determinado bem, serviço ou produto.
+                            Relações de consumo em geral, defesas administrativas em órgãos fiscalizadores,
+                            ações de responsabilidade civil decorrentes de acidente de consumo
+                            e defeitos de produtos ou serviços, consultoria preventiva empresarial-consumerista, entre outros.
 
         section#professor
             img(src="images/diogenes-stars.jpg", alt="Professor Diógenes")
@@ -122,7 +142,7 @@ html
 
         section#contato
             h2 Fale Conosco
-            span.status Essa mensagem é um teste!
+            span.status
             .content
                 form
                     input(type="text", name="Nome", placeholder="Nome")
